@@ -23,7 +23,18 @@ const IndexPage: NextPage = () => {
 	// ローディング中でなければ画像を表示	
 	return (
 		<div>
-			<button onClick={handleClick}>他の猫も見る</button>
+			<button
+				onClick={handleClick}
+				style={{
+				backgroundColor: "#319795",
+				border: "none",
+				borderRadius: "4px",
+				color: "white",
+				padding: "4px 8px",
+				}}
+			>
+			きょうのにゃんこ🐱
+		</button>
 			<div>{ loading || <img src={ imageUrl }/> }</div>
 		</div>
 	);
